@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Лутаева Екатерина Максимовна — эксперт в области трансформации бизнеса и управления проектами с более чем 16 летним опытом.">
+  <meta name="keywords" content="категория, ключевые слова, проекты, управление, данные">
   <title>Лутаева Екатерина Максимовна</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="favicon.png" type="image/png">
@@ -13,13 +14,12 @@
   <header class="container nav">
     <div class="brand">Лутаева Екатерина Максимовна</div>
     <nav>
-      <a href="index.html#services">Проекты</a>
-      <a href="portfolio.html">Портфель</a>
-      <a href="index.html#about">Обо мне</a>
-      <a href="index.html#contact" class="btn btn-ghost">Связаться</a>
-      <a href="https://t.me/Ekaterina_Lutaeva" target="_blank" class="btn btn-ghost">Telegram</a>
+      <a href="index.html#services" aria-label="Перейти к разделу Проекты">Проекты</a>
+      <a href="portfolio.html" aria-label="Перейти в портфель">Портфель</a>
+      <a href="index.html#about" aria-label="Обо мне">Обо мне</a>
+      <a href="index.html#contact" class="btn btn-ghost" aria-label="Связаться со мной">Связаться</a>
+      <a href="https://t.me/Ekaterina_Lutaeva" target="_blank" class="btn btn-ghost" aria-label="Написать в Telegram">Telegram</a>
     </nav>
-    <!-- Language selector -->
     <select id="language-selector">
       <option value="ru">Русский</option>
       <option value="en">English</option>
@@ -38,7 +38,6 @@
   </main>
 
   <script>
-    // Language switcher
     document.getElementById('language-selector').addEventListener('change', function() {
       const selectedLang = this.value;
       document.documentElement.lang = selectedLang;
