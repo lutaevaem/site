@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Портфель проектов — Лутаева Екатерина Максимовна</title>
+  <meta name="description" content="Портфель проектов трансформации: автоматизация, интеграции, BI-аналитика, программы изменений. Отбор по типу проекта и индустрии.">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.png" type="image/png">
+</head>
+<body>
+  <a class="skip-link" href="#main">К основному содержанию</a>
+  <div id="scrollbar"></div>
+  <header class="container nav">
+    <div class="brand">Лутаева Екатерина Максимовна</div>
+    <nav aria-label="Основная навигация">
+      <a href="index.html#services">Проекты</a>
+      <a href="portfolio.html">Портфель</a>
+      <a href="index.html#cases">Ключевые проекты</a>
+      <a href="index.html#contact" class="btn btn-ghost">Связаться</a>
+      <a href="https://t.me/Ekaterina_Lutaeva" target="_blank" rel="noopener" class="btn btn-ghost">Telegram</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="section hero center" aria-label="Портфель">
+      <div class="hero-content">
+        <h1>Портфель проектов</h1>
+        <p class="lead">Выберите фильтры ниже, чтобы посмотреть релевантные кейсы трансформации: автоматизация, интеграции, BI и программы изменений.</p>
+      </div>
+      <div class="neuro-bg" aria-hidden="true"></div>
+    </section>
+
+    <section class="section" id="filters">
+      <div class="container">
+        <div class="filters">
+          <select id="fType" aria-label="Тип проекта">
+            <option value="">Тип проекта (все)</option>
+            <option value="transformation">Программа трансформации</option>
+            <option value="automation">Автоматизация/интеграции</option>
+            <option value="analytics">Данные/BI</option>
+          </select>
+          <select id="fIndustry" aria-label="Индустрия">
+            <option value="">Индустрия (все)</option>
+            <option value="it">IT</option>
+            <option value="production">Производство</option>
+            <option value="retail">Ритейл</option>
+            <option value="multi">Мульти‑страна</option>
+          </select>
+          <input id="fSearch" placeholder="Поиск (ключевые слова)" aria-label="Поиск">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="portfolio-list">
+      <div class="container">
+        <div class="grid cards">
+          <!-- Item 1 -->
+          <article class="card portfolio-item" data-type="transformation" data-industry="multi" data-text="программа трансформации экспансия страны pmo okr p&l">
+            <h3>Программа трансформации холдинга</h3>
+            <p>Портфель изменений: процессы, технологии, люди. PMO, RACI, OKR. Экспансия на новые рынки.</p>
+            <div class="tags"><span class="tag">Программа</span><span class="tag">PMO</span></div>
+            <div class="mini-chart">
+              <svg viewBox="0 0 100 28" preserveAspectRatio="none" role="img" aria-label="+281% выручки за 2 года">
+                <polyline fill="none" stroke="currentColor" stroke-width="2" points="2,24 20,22 38,19 56,16 74,12 92,6"/>
+              </svg>
+              <span class="label">+281% за 2 года</span>
+            </div>
+          </article>
+
+          <!-- Item 2 -->
+          <article class="card portfolio-item" data-type="automation" data-industry="it" data-text="erp crm hris интеграции dwh bi пилоты стандарты sla">
+            <h3>Автоматизация и интеграции (IT)</h3>
+            <div class="tags"><span class="tag">ERP</span><span class="tag">Интеграции</span><span class="tag">DWH</span></div>
+            <p>ERP/CRM/HRIS, интеграционный контур, DWH/BI. Пилоты 2–4 недели, масштабирование, SLA и стандарты.</p>
+            <div class="mini-chart">
+              <svg viewBox="0 0 100 28" preserveAspectRatio="none" role="img" aria-label="Сокращение TTH и времени cikles">
+                <polyline fill="none" stroke="currentColor" stroke-width="2" points="2,20 20,18 38,16 56,14 74,12 92,9"/>
+              </svg>
+              <span class="label">TTH ↓ и speed ↑</span>
+            </div>
+          </article>
+
+          <!-- Item 3 -->
+          <article class="card portfolio-item" data-type="analytics" data-industry="retail" data-text="данные bi витрины okr kpi ретро p&l">
+            <h3>Данные и BI (ритейл)</h3>
+            <div class="tags"><span class="tag">BI</span><span class="tag">OKR</span><span class="tag">KPI</span></div>
+            <p>Модель данных, витрины, BI-дашборды, OKR/KPI. Прозрачность и управленческие решения на фактах.</p>
+            <div class="mini-chart">
+              <svg viewBox="0 0 100 28" preserveAspectRatio="none" role="img" aria-label="Рост NPS и управляемость">
+                <polyline fill="none" stroke="currentColor" stroke-width="2" points="2,16 20,17 38,15 56,12 74,10 92,8"/>
+              </svg>
+              <span class="label">NPS ↑ • ошибки ↓</span>
+            </div>
+          </article>
+
+          <!-- Item 4 -->
+          <article class="card portfolio-item" data-type="automation" data-industry="production" data-text="lms стандартизация обучения операционные ошибки снижение потерь">
+            <h3>Стандартизация обучения (производство)</h3>
+            <div class="tags"><span class="tag">LMS</span><span class="tag">Стандарты</span></div>
+            <p>LMS + стандарты процессов → снижение операционных ошибок и сроков адаптации.</p>
+            <div class="mini-chart">
+              <svg viewBox="0 0 100 28" preserveAspectRatio="none" role="img" aria-label="Снижение ошибок">
+                <polyline fill="none" stroke="currentColor" stroke-width="2" points="2,8 20,10 38,12 56,15 74,18 92,22"/>
+              </svg>
+              <span class="label">ошибки ↓</span>
+            </div>
+          </article>
+        
+          <!-- Item 5 -->
+          <article class="card portfolio-item" data-type="transformation" data-industry="retail" data-text="программа изменений pmo стандарты сервис">
+            <h3>Программа изменений (ритейл)</h3>
+            <p>Единые процессы обслуживания, обучение под KPI, RACI. Улучшение NPS и снижение потерь.</p>
+            <div class="tags"><span class="tag">PMO</span><span class="tag">RACI</span><span class="tag">Service</span></div>
+          </article>
+          <!-- Item 6 -->
+          <article class="card portfolio-item" data-type="analytics" data-industry="it" data-text="dwh витрины sql bi okr kpi">
+            <h3>DWH и витрины (IT)</h3>
+            <p>Сбор данных, витрины и BI. OKR/KPI, логика расчётов и доступ по ролям.</p>
+            <div class="tags"><span class="tag">DWH</span><span class="tag">BI</span><span class="tag">OKR</span></div>
+          </article>
+          <!-- Item 7 -->
+          <article class="card portfolio-item" data-type="automation" data-industry="multi" data-text="crm интеграции api bus soa">
+            <h3>CRM + интеграции</h3>
+            <p>Выбор CRM, API-шина, интеграции с ERP/телефонией. Пилоты 2–4 недели, масштабирование.</p>
+            <div class="tags"><span class="tag">CRM</span><span class="tag">API</span><span class="tag">SOA</span></div>
+          </article>
+          <!-- Item 8 -->
+          <article class="card portfolio-item" data-type="automation" data-industry="production" data-text="lms обучение стандарты адаптация">
+            <h3>LMS и стандартизация (производство)</h3>
+            <p>Внедрение LMS, стандарты адаптации и обучения. Снижение ошибок и сроков онбординга.</p>
+            <div class="tags"><span class="tag">LMS</span><span class="tag">Стандарты</span><span class="tag">Обучение</span></div>
+          </article>
+          <!-- Item 9 -->
+          <article class="card portfolio-item" data-type="transformation" data-industry="multi" data-text="страны экспансия оргдизайн p&amp;l">
+            <h3>Экспансия на новые рынки</h3>
+            <p>Оргдизайн, процессы, метрики, дашборды. Сокращение времени запуска с 1г7м до 3,5 мес.</p>
+            <div class="tags"><span class="tag">Экспансия</span><span class="tag">Оргдизайн</span><span class="tag">P&amp;L</span></div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div>© <span id="year"></span> Лутаева Екатерина Максимовна</div>
+      <div class="links"><a href="mailto:elutaeva@yandex.ru">elutaeva@yandex.ru</a></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Simple filtering by selects and search
+    (function(){
+      const items=[...document.querySelectorAll('.portfolio-item')];
+      const fType=document.getElementById('fType');
+      const fIndustry=document.getElementById('fIndustry');
+      const fSearch=document.getElementById('fSearch');
+      function apply(){
+        const t=(fType.value||'').toLowerCase();
+        const ind=(fIndustry.value||'').toLowerCase();
+        const q=(fSearch.value||'').toLowerCase();
+        items.forEach(el=>{
+          const mt=el.dataset.type, mi=el.dataset.industry, txt=el.dataset.text;
+          const ok=(t===''||mt===t)&&(ind===''||mi===ind)&&(q===''||txt.includes(q));
+          el.style.display= ok ? '' : 'none';
+        });
+      }
+      [fType,fIndustry].forEach(s=>s.addEventListener('change', apply));
+      fSearch.addEventListener('input', apply);
+      apply();
+    })();
+  </script>
+</body>
+</html>
