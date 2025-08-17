@@ -38,3 +38,14 @@ button:hover, .btn-cta:hover {
     0% { opacity: 0; transform: translateY(30px); }
     100% { opacity: 1; transform: translateY(0); }
 }
+
+/* Language selector style */
+#language-selector {
+    font-size: 14px;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}

@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Лутаева Екатерина Максимовна — эксперт в области трансформации бизнеса и управления проектами с более чем 16 летним опытом.">
   <title>Лутаева Екатерина Максимовна</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="favicon.png" type="image/png">
@@ -18,16 +19,35 @@
       <a href="index.html#contact" class="btn btn-ghost">Связаться</a>
       <a href="https://t.me/Ekaterina_Lutaeva" target="_blank" class="btn btn-ghost">Telegram</a>
     </nav>
+    <!-- Language selector -->
+    <select id="language-selector">
+      <option value="ru">Русский</option>
+      <option value="en">English</option>
+    </select>
   </header>
 
   <main>
     <section id="about" class="section">
       <div class="container">
         <h2>Обо мне</h2>
-        <p>Я — Лутаева Екатерина Максимовна, эксперт в области трансформации бизнеса и управления проектами. С опытом более 16 лет и более 30 успешных проектов, я работаю в таких областях как автоматизация, интеграции, данные и бизнес-аналитика.</p>
+        <p data-lang="ru">Я — Лутаева Екатерина Максимовна, эксперт в области трансформации бизнеса и управления проектами. С опытом более 16 лет и более 30 успешных проектов, я работаю в таких областях как автоматизация, интеграции, данные и бизнес-аналитика.</p>
+        <p data-lang="en" style="display: none;">I am Ekaterina Maksimovna Lutaeva, an expert in business transformation and project management with more than 16 years of experience and over 30 successful projects. I specialize in automation, integrations, data, and business analytics.</p>
         <img src="assets/photo_2025-07-15_15-47-15.jpg" alt="Лутаева Екатерина Максимовна — портрет" loading="lazy" />
       </div>
     </section>
   </main>
+
+  <script>
+    // Language switcher
+    document.getElementById('language-selector').addEventListener('change', function() {
+      const selectedLang = this.value;
+      document.documentElement.lang = selectedLang;
+
+      const textElements = document.querySelectorAll('[data-lang]');
+      textElements.forEach(el => {
+        el.style.display = el.getAttribute('data-lang') === selectedLang ? 'block' : 'none';
+      });
+    });
+  </script>
 </body>
 </html>
